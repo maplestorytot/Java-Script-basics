@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page title here</title>
+</head>
+
+<body>
+    <!--onsubmit means when submited, do this verify subprogram and if return true, then will form will submit
+            method post is sending info to action link-->
+    <form action="" onsubmit="return verify()" method="POST">
+        <input id="username" name="username" type="text">Enter your name</input>
+        <!--Hidden is making it not visible now, but can use element.style.display="block" is show or "none" is disapear-->
+        <p id="validationMessage" hidden>Number must be between 40-90</p>
+        <p id="nanMessage" hidden>Please enter a numeric value</p>
+        <input id="number" name="number" type="text">Enter a number between 40-90</input>
+        <input type="submit"></input>
+    </form>
+    <script src="11FormValidation.js"></script>
+</body>
+
+</html>
